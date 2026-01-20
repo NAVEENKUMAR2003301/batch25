@@ -236,21 +236,211 @@ console.log("num3 : ",num3);
 
 
 
-
-
-
-
-
-
+console.clear()
 
 
 // 2. Assignment operator
 
-// 3. comparision operator
+
+let a1 = 10
+
+    a1 = a1 + a1
+
+    console.log(a1);
+
+let b1 = 20
+
+let additionVal = 100
+
+    // b1 = b1 + additionVal 
+
+    b1 += additionVal
+
+    // b1 += additionVal -- > assignment operator
+
+    console.log(b1);
+    
+    
+
+// 3. comparision operator Or relational operator
+
+// meaning      syntex         example      results
+
+//  less then     <             3<4          true
+
+// greaterThen    >             4>4          false
+
+// lessThenEq     <=            4<=4         true
+
+// greaterThenEq  >=            4>=4         true
+
+// loosyTypeEq    ==            5=="5"       true
+
+// strictlyTypeEq ===           5==="5"      false
+
+// loosyNotEq      !=           5!="5"       false
+
+// strictlyNotEq   !==          5!==5        false
+
+// let a = 10;
+// let b = "10";
+// console.log(a == b);  // true 
+
+// let x = 5;
+// let y = 3;
+// console.log(x > y);  // true
+
+// let p = 7;
+// let q = 7;
+// console.log(p !== q); // false
+
+// let m = 4;
+// let n = "4";
+// console.log(m === n); // false
+
+// let i = 2;
+// let j = 5;
+// console.log(i <= j); // true
+
+console.clear()
 
 // 4. logical operator
 
+//  And   - &&
+
+// true && true  = true 
+
+// false && true = false
+
+//  Or    - || 
+
+// false || true = true
+
+// false || false = false
+
+//  Not   - !
+
+// !(true) = false 
+
+// !(false) = true 
+
+
+console.log((5===5)&&(4>=5)||(9===9));
+
+// true && false = false
+
+// false || true = true
+
+console.log(!(6>=2)||(8===8)); // !(true) = false || (8===8) true = true
+
+console.log(!(5==="5")&&!(7===.7)); // true
+
+
 // 5. ternary operator
+
+// condition ? statement : statement;
+
+let pwd = false
+
+pwd ? console.log("allow to web in") : console.log("password wrong");
+
+
+// Concatenation  +
+
+let a11 = "iron"
+let a12 = "man"
+
+let total = a11 +" "+ a12 
+
+console.log(total);
+
+
+
+
+
+// Template Strings 
+
+
+let b11 = "spider"
+let b12 = "man"
+
+let total1 = `${b11}${b12}`
+
+console.log(total1);
+
+
+// Type Conversion
+
+// • Implicit type conversion
+
+// let number = 12
+
+// let str2   = "hello"
+
+// let final = number + str2
+
+// console.log(final);
+
+console.clear();
+
+
+// string 
+
+// string anything is string
+
+
+console.log(typeof("1" + "1"));
+console.log(typeof("1" + 1));
+console.log(typeof("1" + true));
+console.log(typeof("1" + undefined));
+console.log(typeof("1" + null));
+console.log(typeof("1" + [1,2]));
+console.log(typeof("1" + {k:1}));
+
+
+// number
+
+console.log(typeof(1 + "1"));
+console.log(typeof(1 + 1));
+console.log(typeof(1 + true));
+console.log(typeof(1 + undefined));
+console.log(typeof(1 + null));
+console.log(typeof(1 + [1,2]));
+console.log(typeof(1 + {u:4}));
+
+
+// boolean 
+
+console.log(typeof(true + "1"));
+console.log(typeof(true + 1));
+console.log(typeof(true + true));
+console.log(typeof(true + undefined));
+console.log(typeof(true + null));
+console.log(typeof(true + [1,2]));
+console.log(typeof(true + {w:2}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// • Explicit type conversion
+
 
 
 
