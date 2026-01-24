@@ -863,6 +863,200 @@ function a(a,...b){
 
 a("1","2","3","4","5")
 
+console.clear();
+
+
+
+// destracture
+
+
+// array
+
+let num1 = [1,2,3,4]
+
+let a1 = num1[0]
+let a2 = num1[1]
+let a3 = num1[2]
+let a4 = num1[3]
+
+console.log(a1 + a4);
+
+// destracture 
+
+let [b1,b2,b3,b4] = num1
+
+console.log(b1 + b4);
+
+
+
+// object 
+
+let obj3 = {
+    name1 : "john",
+    role  : "developer"
+}
+
+let data1 = obj3.name1
+let data2 = obj3.role
+
+console.log(data1);
+console.log(data2);
+
+// destracture
+
+
+let {name1,role} = obj3
+
+console.log(name1);
+console.log(role);
+
+
+
+// nested array
+
+let nested = [1,2,3,4,[5,6,7,[8]]]
+
+let n1 = nested[4][3][0]
+
+
+// destracture 
+
+let [c1,c2,c3,c4,[c5,c6,c7,[c8]]] = nested
+
+console.log(c8);
+
+console.clear();
+
+
+
+// Array advance concept 
+
+
+let d1 = [1,2,3,4,5,6,"hello",true,undefined,null,[1,2,3,4],{k:2}]
+
+console.log(d1);
+console.log(d1[0]);
+console.log(d1[3]);
+
+console.log(d1[0]);
+console.log(d1[d1.length-1]);
+
+
+// homogeneous - same datatypes
+
+// hetrogenous - different dataTypes
+
+// flexible
+
+// 1. array manipulation method 
+
+// condition :- 
+
+// 1. if you add the conditon you can use , you can add multiple value.
+
+// 2. if you remove the condition you can use , you can remove one value only.
+
+// types :- 
+
+
+let manipulation  = [1,2,3,4]
+
+// 1. pop() - we can remove the value array in last
+
+manipulation.pop()
+
+// 2. shift() - we can remove the value array in first
+
+manipulation.shift()
+
+// 3. unshift() - we can add the value array in first
+
+manipulation.unshift(0,1)
+
+// 4. push()  - we can add the value array in last
+
+manipulation.push(4,5,6,7,8)
+
+console.log(manipulation);
+
+// 5. splice(// startingIndex , removeCount , adding value) 
+
+let spliceArr = [1,2,3,40,50,60,7]
+
+spliceArr.splice(3,3,4,5,6)
+
+console.log(spliceArr);
+
+// array merge concept 
+
+// 1. concat()
+
+     let ar1 = [1,2,3,4]
+     let ar2 = [5,6,7,8]
+
+     let totalVal1 = ar1.concat(ar2,9,10)
+     
+     console.log(totalVal1);
+     
+
+// 2. flat()
+
+     let nest = [1,2,3,4,[5,6,[7,[8,[9,[10]]]]]]
+
+     let flatVal = nest.flat(Infinity)
+
+     console.log(flatVal);
+     
+
+// 3. slice()
+
+   let a5 = [1,2,3,4,50,60,70,8]
+
+   let sliceVal = a5.slice(4,7) //startingIndex,endingIndex + 1
+
+   console.log(sliceVal);
+   
+
+// 4. fill()
+
+let fillVal = [1,2,3,4] // 1,2,3,four
+
+fillVal.fill("four",3,4) // value , si , ei+1
+
+console.log(fillVal);
+
+
+// 5. sort()
+
+let sortVal = [1,9,"a","A",401,8,2000,5]
+
+let sort1 = sortVal.sort()
+
+console.log(sort1);
+
+
+
+
+// 6. indexOf()
+
+// 7. lastIndexOf()
+
+// 8. includes()
+
+// 9. reverse()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
