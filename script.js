@@ -1035,15 +1035,205 @@ let sort1 = sortVal.sort()
 console.log(sort1);
 
 
+console.clear();
 
 
-// 6. indexOf()
+// 6. indexOf()  v -- > i
+
+let arr12 = [1,2,3,4,5,4,3,2,1]
+
+let newIndexof = arr12.indexOf(2,2) // value , from index
+
+console.log(newIndexof);
+
+
+
 
 // 7. lastIndexOf()
 
+let arr13 = [1,2,3,4,3,2,1]
+
+let newLastIndexOf = arr13.lastIndexOf(2,4) // value , from index
+
+console.log(newLastIndexOf);
+
+
 // 8. includes()
 
+let arr14 = [1,2,3,4]
+
+let newIncludes = arr14.includes(4)
+
+console.log(newIncludes);
+
+
 // 9. reverse()
+
+let arr15 = [4,10,15,20]
+
+let newReverse = arr15.reverse()
+
+console.log(newReverse);
+
+
+// array higherorder methods
+
+// function one(){
+//     console.log("one");
+    
+// }
+
+// function two(){
+//     console.log("two");
+    
+// }
+
+// one(two())
+
+// forEach()
+
+let game = ["gta","ff","pubg","cod"]
+
+let forEach1 = game.forEach((currentElement,index,totalArray)=>{
+    return(currentElement);
+    
+})
+
+console.log(forEach1);
+
+
+// map
+
+let map1 = game.map((cu,i,ta)=>{
+
+    return("map "+cu);
+   
+})
+
+console.log(map1);
+
+
+
+
+// filter
+
+let employee = [
+    {name : "a", salary : 100000},
+    {name : "b", salary : 200000},
+    {name : "c", salary : 300000},
+    {name : "d", salary : 400000}
+]
+
+let salayDate = employee.filter((c,i,t)=>{
+
+    return c.salary > 200000
+})
+
+console.log(salayDate);
+
+
+// find 
+
+let salaryDate1 = employee.find((c,i,t)=>{
+   return c.salary > 200000;
+})
+
+console.log(salaryDate1);
+
+
+// reduce 
+
+employee = [
+  { name: "a", salary: 100000 },
+  { name: "b", salary: 200000 },
+  { name: "c", salary: 300000 },
+  { name: "d", salary: 400000 },
+];
+
+let allSalary = employee.reduce((acc,c,i,t)=>{
+    return acc + c.salary
+
+    //   0 + 1 = 1
+    //   1 + 2 = 3
+    //   3 + 3 = 6
+    //   6 + 4 = 10
+
+    // retrun acc + c.salary = 10 + 0
+
+},0) // 1 // 3 // 6 // 10
+
+console.log(allSalary);
+
+
+
+
+// some - Or 
+
+let some1 = [2,2,2,2]
+
+let newSome = some1.some((cu,i,t)=>{
+   return cu % 2 == 0
+   // 1 % 2 == 0 -- > false
+   // 2 % 2 == 0 -- > true
+   // 3 % 2 == 0 -- > false
+   // 4 % 2 == 0 -- > true
+
+   // (false || true || false || true) = true
+})
+
+console.log(newSome);
+
+
+
+// every - And
+
+let newEvery = some1.every((c,i,t)=>{
+    return i%2==0
+})
+
+console.log(newEvery);
+
+
+// sort
+
+let aa = [4,8,2,7,3000]
+
+// 4 , 2 , 7 , 8 , 3000 
+
+// 2 , 4 , 7 , 8 ,3000
+
+let newSort = aa.sort()
+
+console.log(newSort);
+
+
+let sortVal1 = aa.sort((a,b)=>{
+ return b-a
+})
+
+console.log(sortVal1);
+
+// array to string
+
+
+// toString()
+
+let ab = [1,2,3]
+
+let arrStr = ab.toString()
+
+console.log(arrStr);
+
+
+// join()
+
+let str2 = ab.join("hi")
+
+console.log(str2);
+
+
+
+
 
 
 
