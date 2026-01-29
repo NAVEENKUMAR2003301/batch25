@@ -1231,6 +1231,275 @@ let str2 = ab.join("hi")
 
 console.log(str2);
 
+console.clear();
+
+
+// 13. String Methods
+
+
+let str = "javascript"
+
+// charAt(), i -- > v
+
+let charAtVal  = str.charAt(1)
+
+console.log(charAtVal);
+
+
+// charCodeAt(), i -- > av
+
+let charCodeAtVal = str.charCodeAt(1)
+
+console.log(charCodeAtVal);
+
+
+// length, 
+
+let lengthVal = str.length
+
+console.log(lengthVal);
+
+str = "javascript";
+
+
+
+// slice(),
+
+let sliceVal1 = str.slice(2,5)
+
+console.log(sliceVal1);
+
+
+
+// toUpperCase(), 
+
+str = "javascript";
+
+let upper = str.toUpperCase()
+
+console.log(upper);
+
+// toLowerCase(), 
+
+str = "JAVASCRipt";
+
+let lower = str.toLowerCase()
+
+console.log(lower);
+
+// trim(), 
+
+str = " javascript "
+
+console.log(str.length);
+
+let trimVal = str.trim()
+
+console.log(trimVal.length);
+
+// trimStart()
+
+let startTrim = str.trimStart()
+
+console.log(startTrim.length);
+
+// trimEnd()
+
+let Endtrim = str.trimEnd()
+
+console.log(Endtrim);
+
+str = " java-script ";
+
+
+// includes(),
+ let includesVal1 = str.includes("a")
+
+ console.log(includesVal1);
+ 
+
+// split(), 
+
+let split = str.split("a")
+
+console.log(split);
+
+// indexOf(), 
+
+str = "java-script";
+
+let indexOfVal1 = str.indexOf("a",2)
+
+console.log(indexOfVal1);
+
+// lastIndexOf()
+
+let last = str.lastIndexOf("a",2)
+
+console.log(last);
+
+
+
+// replace(), 
+
+let replaceVal = str.replace("java","python") // "java","python"
+
+console.log(replaceVal);
+
+
+
+// startsWith(), 
+
+str = "java-script";
+
+let start = str.startsWith("j")
+
+console.log(start);
+
+
+// endsWith()
+
+let end = str.endsWith("t")
+
+console.log(end);
+
+
+console.clear();
+
+// Date
+
+let date1 = new Date()
+
+console.log(date1);
+
+// get
+
+let year = date1.getFullYear()
+
+console.log(year);
+
+let month = date1.getMonth()
+
+console.log(month);
+
+let date = date1.getDate()
+
+console.log(date);
+
+let day = date1.getDay()
+
+console.log(day);
+
+let hour = date1.getHours()
+
+console.log(hour);
+
+let minutes = date1.getMinutes()
+
+console.log(minutes);
+
+let seconds = date1.getSeconds()
+
+console.log(seconds);
+
+
+// locale string
+
+let time = date1.toLocaleTimeString()
+
+console.log(time);
+
+let date2 = date1.toLocaleDateString()
+
+console.log(date2);
+
+let both = date1.toLocaleString()
+
+console.log(both);
+
+
+
+
+console.clear();
+
+
+// set 
+
+let dateVal = new Date()
+
+console.log(dateVal);
+
+
+// year
+
+dateVal.setFullYear(2003)
+
+console.log(dateVal);
+
+// month
+
+dateVal.setMonth(4)
+
+console.log(dateVal);
+
+// date
+
+dateVal.setDate(10)
+
+console.log(dateVal);
+
+
+// time 
+
+dateVal.setHours(5)
+
+console.log(dateVal);
+
+// minutes
+
+dateVal.setMinutes(5)
+
+console.log(dateVal);
+
+// seconds 
+
+dateVal.setSeconds(5)
+
+console.log(dateVal);
+
+
+
+// birthday Finder
+
+let year1 = prompt("enter your bday year")
+let month1 =prompt("enter your bday month using number")
+let date11 = prompt("enter your bday date")
+
+let orgin = new Date()
+
+orgin.setFullYear(year1)
+orgin.setMonth(month1-1)
+orgin.setDate(date11)
+
+let day1 = orgin.getDay()
+
+
+
+let dayData = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+
+alert(dayData[day1])
+
+
+
+
+
+
+
+
+
+
+
 
 
 
