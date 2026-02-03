@@ -1469,29 +1469,310 @@ console.log(dateVal);
 
 
 
-// birthday Finder
+// // birthday Finder
 
-let year1 = prompt("enter your bday year")
-let month1 =prompt("enter your bday month using number")
-let date11 = prompt("enter your bday date")
+// let year1 = prompt("enter your bday year")
+// let month1 =prompt("enter your bday month using number")
+// let date11 = prompt("enter your bday date")
 
-let orgin = new Date()
+// let orgin = new Date()
 
-orgin.setFullYear(year1)
-orgin.setMonth(month1-1)
-orgin.setDate(date11)
+// orgin.setFullYear(year1)
+// orgin.setMonth(month1-1)
+// orgin.setDate(date11)
 
-let day1 = orgin.getDay()
-
-
-
-let dayData = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
-
-
-alert(dayData[day1])
+// let day1 = orgin.getDay()
 
 
 
+// let dayData = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+
+// alert(dayData[day1])
+
+
+console.clear();
+
+
+
+// Asyncronous 
+
+// setTimeout 
+
+// syntex 
+
+
+// setTimeout(()=>{
+
+//     console.log("hello");
+    
+
+// },1000)
+
+// setTimeout(()=>{
+
+//     console.log("hi");
+    
+
+// },5000)
+
+
+// setInterval(()=>{
+
+//     let time = new Date()
+
+//     console.log(time.toLocaleTimeString());
+    
+    
+// },1000)
+
+
+// function one(){
+//     console.log("one");
+    
+// }
+
+// function two(){
+//     console.log("two");
+    
+// }
+
+// function three(){
+//     console.log("three");
+    
+// }
+
+// one()
+// setTimeout(two,0)
+// three()
+
+
+
+// Promise
+
+
+// resolve - successfull data (.then())
+
+// reject - error data (.catch())
+
+// bending - coming data (.finally())
+
+
+// API
+
+// https://fakestoreapi.com/products/1
+
+// fetch("https://fakestoreapi.com/products/")
+// .then((data1)=>{
+
+//     // json to js --> .json()
+
+//    return data1.json()
+    
+// })
+// .then((jsData)=>{
+
+//    let tenDollerBellow =  jsData.filter((current,index,total)=>{
+
+//         return current.price > 10
+        
+
+//     })
+
+//     console.log(tenDollerBellow);
+    
+    
+// })
+
+// .catch((error)=>{
+
+//     console.log(error);
+    
+
+// })
+
+// .finally((a)=>{
+//     console.log(a);
+    
+// })
+
+
+
+
+// DOM - Document Object Model
+
+// selecting 
+
+// 1. getElementByTagName
+
+let tag = document.getElementsByTagName("h1")
+
+console.log(tag);
+
+// 2. getElementByClassName
+
+let class1 = document.getElementsByClassName("one")
+
+console.log(class1);
+
+// 3. getElementById
+
+let id1 = document.getElementById("two")
+
+console.log(id1);
+
+// 1. querySelector 
+
+let tag1 = document.querySelector("h2")
+
+console.log(tag1);
+
+let class2 = document.querySelector(".aa")
+
+console.log(class2);
+
+let id2 = document.querySelector("#bb")
+
+console.log(id2);
+
+
+
+
+// 2. querySelectorAll
+
+let divAll = document.querySelectorAll("div")
+
+console.log(divAll);
+
+
+console.clear();
+
+
+
+// // traversing 
+
+// // parent element
+
+// let child1 = document.querySelector(".child1")
+
+// console.log(child1);  
+// console.log(child1.parentElement);// parentElement  
+
+
+// // child element
+
+// let parent = document.querySelector(".parent")
+
+// console.log(parent);
+// console.log(parent.firstElementChild);// firstElementChild
+// console.log(parent.lastElementChild);//lastElementChild 
+// console.log(parent.firstChild);// firstChild
+// console.log(parent.lastChild);// lastChild
+
+
+// // sibling element
+
+// let child11 = document.querySelector(".child1")
+
+
+// console.log(child11);
+// let child2 = (child11.nextElementSibling);// nextSiblingElement
+
+// console.log(child2.nextElementSibling);
+
+// console.log(child2.previousElementSibling);
+
+
+
+// // manipulating
+
+// // value - input tag inside value
+
+// // textContent,innerText,innerHtml - all tag exclude input tag
+
+// let input = document.querySelector("input")
+
+// input.value = "hi"
+
+// let h3 = document.querySelector("h3")
+
+
+
+// let div = document.querySelector("div")
+
+// div.innerHTML = `<h1>hi</h1><h5>hi</h5>`
+
+
+// // event handler and event listner
+
+// // event handler
+
+// function click1(){
+//    h3.innerText = "one";
+// }
+
+
+// // event listner
+
+// let h2 = document.querySelector("h2")
+// let btn = document.querySelector(".btn")
+
+// btn.addEventListener("click",()=>{
+//     h2.innerText = "good morning"
+// })
+
+
+// // style
+
+
+// // h2.style.fontSize = "50px"
+
+// // // add attributes 
+
+
+// // h2.addAttributes("class","one")
+
+
+// // // new tag 
+
+// // document.createElement("h1")
+
+// // // one tag inside another tag if you want give you can use 
+
+// // append 
+// // prepend
+
+// // // eval()
+
+// // console.log("10"+10);
+
+// // console.log(eval("10"+10));
+
+// remove()
+
+
+
+
+
+let input = document.querySelector("input")
+let button = document.querySelector("button")
+let ol = document.querySelector("ol")
+
+button.addEventListener("click",()=>{
+    let inputValue = input.value
+    let li = document.createElement("li")
+    li.innerText = inputValue
+    
+
+    li.setAttribute("class","aa")
+
+    ol.append(li)
+
+    li.addEventListener("click",()=>{
+        li.remove()
+    })
+
+})
 
 
 
