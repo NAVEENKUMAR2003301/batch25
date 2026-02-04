@@ -1754,52 +1754,33 @@ console.clear();
 
 
 
-let input = document.querySelector("input")
-let button = document.querySelector("button")
-let ol = document.querySelector("ol")
+// let input = document.querySelector("input")
+// let button = document.querySelector("button")
+// let ol = document.querySelector("ol")
 
-button.addEventListener("click",()=>{
-    let inputValue = input.value
-    let li = document.createElement("li")
-    li.innerText = inputValue
+// button.addEventListener("click",()=>{
+//     let inputValue = input.value
+//     let li = document.createElement("li")
+//     li.innerText = inputValue
     
 
-    li.setAttribute("class","aa")
+//     li.setAttribute("class","aa")
 
-    ol.append(li)
+//     ol.append(li)
 
-    li.addEventListener("click",()=>{
-        li.remove()
-    })
+//     li.addEventListener("click",()=>{
+//         li.remove()
+//     })
 
-})
-
-
+// })
 
 
+// let inter = setInterval(()=>{
+//  console.log("hi");
+ 
+// },1000)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // 4.Date
-
+// setTimeout(()=>{
+// clearInterval(inter)
+// },2000)
 
